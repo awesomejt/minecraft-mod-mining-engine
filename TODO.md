@@ -154,7 +154,7 @@ Follow `../trees/MIGRATION.md` §3–§5.
 - [x] 5.3 `ModConfig`: delegate IO to `JsonConfigStore`; add
       `toBalanceSettings()`. JSON on disk stays byte-compatible (field names
       and `_docs` untouched).
-- [ ] 5.4 `TreesMod`: implement the ports; replace queue/tick/tax/pause code
+- [x] 5.4 `TreesMod`: implement the ports; replace queue/tick/tax/pause code
       with `HarvestScheduler`; replace budget block with `HarvestPlanner`; map
       `HarvestFeedback` → translation keys per MIGRATION.md §5. Keep
       entry-gate logic (sneak/axe/natural/tier checks) and both-phase
