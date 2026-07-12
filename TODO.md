@@ -181,7 +181,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
       MC/loader/api versions), fabric-specific `.gitignore` entries, LICENSE.
 - [x] 6.2 `fabric.mod.json`: id `jlt_ores`, entrypoint
       `media.jlt.minecraft.mods.ores.OresMod`, same depends block as trees.
-- [ ] 6.3 `OreFamily` enum + matcher (DESIGN §3; specific-blocks-before-tags
+- [x] 6.3 `OreFamily` enum + matcher (DESIGN §3; specific-blocks-before-tags
       ordering — see the nether-gold note) + tests.
 - [ ] 6.4 `ModConfig` (flat, per DESIGN §5, delegating to `JsonConfigStore`,
       `toBalanceSettings()`) + sanitization tests; `config/jlt_ores.example.json`
@@ -221,3 +221,7 @@ ores DESIGN.md, with one line of why.
   previously abbreviated this as `enchanted` and was corrected.
 - `BreakResult` was dropped because the transplanted tick loop needs only the
   success/failure boolean already returned by `HarvestAdapter.breakBlock`.
+- Minecraft 26.2 no longer exposes `BlockTags` constants for coal, redstone,
+  lapis, diamond, or emerald ores even though their vanilla data tags still
+  exist; `jlt_ores` creates equivalent `TagKey`s from the canonical
+  `minecraft:<family>_ores` identifiers.
