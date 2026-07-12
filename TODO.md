@@ -151,7 +151,7 @@ Follow `../trees/MIGRATION.md` §3–§5.
       `AdjacentBlockCollector` (keeps `isLogLike`/`isLeafLike` matchers,
       BlockPos↔Pos3i conversion, `ScannedTree` + classification). Existing
       trees tests must keep passing unchanged.
-- [ ] 5.3 `ModConfig`: delegate IO to `JsonConfigStore`; add
+- [x] 5.3 `ModConfig`: delegate IO to `JsonConfigStore`; add
       `toBalanceSettings()`. JSON on disk stays byte-compatible (field names
       and `_docs` untouched).
 - [ ] 5.4 `TreesMod`: implement the ports; replace queue/tick/tax/pause code
