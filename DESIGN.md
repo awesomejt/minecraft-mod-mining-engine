@@ -178,13 +178,21 @@ public final class ScheduledBreak<L, T> {   // fields mirror TreesMod.ScheduledB
 
 public final class HarvestScheduler<L, T> {
     public HarvestScheduler(HarvestAdapter<L, T> adapter, Supplier<BalanceSettings> settings) {}
-    public void schedule(List<Pos3i> positions, /* per-entry params as in TreesMod.scheduleOrBreakNow */) {}
+    public void schedule(UUID playerId, L level, List<Pos3i> positions,
+        int extraDurability, int delayPerBlockTicks, int matchKind,
+        float exhaustionPerBlock, int xpCostPerBlock, int durabilityChargedBlocks,
+        int substitutionXpCostPerBlock, boolean applyBaseDurability,
+        ToolTier requiredTier, T boundTool) {}
     public boolean hasScheduledWork(UUID playerId) {}
     public void tick(long currentTick) {}
     public void clearAll() {}                 // server-stopped reset (also clears pauses)
     public void clearHungerPause(UUID id) {}  // called on new harvest start
 }
 ```
+
+`schedule` anchors new entries to the most recent tick supplied to `tick`
+(initially zero). `clearAll` resets that scheduling tick to zero along with the
+queue and hunger-pause state.
 
 Ports (`engine.port`):
 

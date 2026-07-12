@@ -130,7 +130,7 @@ Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 - [x] 4.3 Ports: `HarvestAdapter`, `ActivePlayer`, `ToolSnapshot`, `BreakResult`
       (drop `BreakResult` if a plain `boolean` suffices — note in deviation log).
 - [x] 4.4 `HarvestFeedback` enum.
-- [ ] 4.5 `ScheduledBreak<L,T>` + `HarvestScheduler<L,T>` implementing the tick
+- [x] 4.5 `ScheduledBreak<L,T>` + `HarvestScheduler<L,T>` implementing the tick
       contract in DESIGN.md §7.1–7.2 **exactly** (cascade sets, resumed-skip,
       restagger, +20-tick defers, five removeIf passes, orphan cleanup).
 - [ ] 4.6 Scheduler tests with fake adapter/player — cover every path listed in
