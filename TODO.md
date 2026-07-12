@@ -94,20 +94,20 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
       those assertions move to trees if they test mod behavior).
 - [x] 2.3 `./gradlew test` green in engine. **Commit**, tag nothing, then
       `./gradlew publishToMavenLocal` (engine 0.1.0).
-- [ ] 2.4 Trees: add to `gradle.properties` `engine_version=0.1.0`; in
+- [x] 2.4 Trees: add to `gradle.properties` `engine_version=0.1.0`; in
       `build.gradle` add `mavenLocal()` to `repositories` and
       ```gradle
       implementation "media.jlt.minecraft:mining-engine:${project.engine_version}"
       include "media.jlt.minecraft:mining-engine:${project.engine_version}"
       ```
-- [ ] 2.5 Trees: delete the 11 moved classes + their tests; update all imports
+- [x] 2.5 Trees: delete the 11 moved classes + their tests; update all imports
       (`TreesMod`, `TreeScanner`, `ModConfig`, remaining tests).
       `TreeToolTier.fromAxeItem(stack)` call sites become
       `ToolTier.fromMaxDamage(stack.getMaxDamage())`. Keep `TreeType`,
       `LeafCollectionPolicy`, `TreeScanner`, `ScannedTree` + their tests.
-- [ ] 2.6 Trees: `./gradlew test build` green; confirm the built jar under
+- [x] 2.6 Trees: `./gradlew test build` green; confirm the built jar under
       `build/libs/` contains the nested engine jar (`META-INF/jars/`).
-- [ ] 2.7 **Commit trees** ("Consume mining-engine 0.1.0 for pure logic").
+- [x] 2.7 **Commit trees** ("Consume mining-engine 0.1.0 for pure logic").
       ✅ **Checkpoint A: trees behavior-identical on engine 0.1.0.**
 
 ## Phase 3 — Generic scanner in the engine
