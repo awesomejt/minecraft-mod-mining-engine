@@ -126,7 +126,7 @@ Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 
 - [x] 4.1 `BalanceSettings` (+ `TaxMode`, `DurabilityProtectionMode`,
       `delayTicksForEfficiencyLevel`, `isProtectionActive`).
-- [ ] 4.2 `HarvestPlanner` + tests (§6 semantics; §10 test list).
+- [x] 4.2 `HarvestPlanner` + tests (§6 semantics; §10 test list).
 - [ ] 4.3 Ports: `HarvestAdapter`, `ActivePlayer`, `ToolSnapshot`, `BreakResult`
       (drop `BreakResult` if a plain `boolean` suffices — note in deviation log).
 - [ ] 4.4 `HarvestFeedback` enum.
