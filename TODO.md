@@ -174,7 +174,7 @@ Follow `../trees/MIGRATION.md` §3–§5.
 
 Follow `../mining-ores/DESIGN.md` throughout.
 
-- [ ] 6.1 Scaffold from trees: copy wrapper, `settings.gradle`
+- [x] 6.1 Scaffold from trees: copy wrapper, `settings.gradle`
       (`rootProject.name = 'mod-mining-ores'`), `build.gradle`
       (`archivesName = 'mod-mining-ores'`, engine dep + `include`),
       `gradle.properties` (`mod_version=0.1.0`, `engine_version=0.2.0`, same
