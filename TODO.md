@@ -162,7 +162,7 @@ Follow `../trees/MIGRATION.md` §3–§5.
 - [x] 5.5 Delete the now-dead private methods from `TreesMod` (everything the
       scheduler/planner absorbed). Target: file well under half its current
       830 lines.
-- [ ] 5.6 `./gradlew test build` green.
+- [x] 5.6 `./gradlew test build` green.
 - [ ] 5.7 **[Jason]** In-game parity smoke test (PrismLauncher instance
       "26.2"): chop small + 2×2 tree; hunger pause then eat → resume; pause
       timeout cancel; durability floor trim + block; tool-broke mid-chop;
