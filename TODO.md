@@ -133,7 +133,7 @@ Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 - [x] 4.5 `ScheduledBreak<L,T>` + `HarvestScheduler<L,T>` implementing the tick
       contract in DESIGN.md §7.1–7.2 **exactly** (cascade sets, resumed-skip,
       restagger, +20-tick defers, five removeIf passes, orphan cleanup).
-- [ ] 4.6 Scheduler tests with fake adapter/player — cover every path listed in
+- [x] 4.6 Scheduler tests with fake adapter/player — cover every path listed in
       DESIGN.md §10 (this is the acceptance bar for the phase).
 - [ ] 4.7 `JsonConfigStore` extracted from trees `ModConfig` (Path-based, no
       FabricLoader, no Logger) + tests (missing file → defaults written,
