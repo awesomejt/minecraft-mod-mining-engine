@@ -84,15 +84,15 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
 
 ## Phase 2 — Move pure logic into the engine
 
-- [ ] 2.1 Create packages per DESIGN.md §3 and move the 11 classes per the
+- [x] 2.1 Create packages per DESIGN.md §3 and move the 11 classes per the
       table in DESIGN.md §4 (copy from trees, fix package/name; for `ToolTier`
       delete `fromAxeItem`; for `MessageRateLimiter` widen the key parameter to
       `Object`).
-- [ ] 2.2 Move their tests from `../trees/src/test/...` (rename
+- [x] 2.2 Move their tests from `../trees/src/test/...` (rename
       `ChopDistanceTest`→`HarvestDistanceTest`, `TreeScanBoundsTest`→`ScanDepthBoundsTest`,
       `TreeToolTierTest`→`ToolTierTest` dropping any `ItemStack`-based cases —
       those assertions move to trees if they test mod behavior).
-- [ ] 2.3 `./gradlew test` green in engine. **Commit**, tag nothing, then
+- [x] 2.3 `./gradlew test` green in engine. **Commit**, tag nothing, then
       `./gradlew publishToMavenLocal` (engine 0.1.0).
 - [ ] 2.4 Trees: add to `gradle.properties` `engine_version=0.1.0`; in
       `build.gradle` add `mavenLocal()` to `repositories` and
