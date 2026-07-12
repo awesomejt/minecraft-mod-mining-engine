@@ -201,7 +201,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
 
 ## Phase 7 — Wrap-up
 
-- [ ] 7.1 Engine `README.md`: what it is, the ports a consumer implements,
+- [x] 7.1 Engine `README.md`: what it is, the ports a consumer implements,
       version policy (semver, MC-independent), publishToMavenLocal workflow.
 - [ ] 7.2 Trees `README` (if present) + `MIGRATION.md`: mark migration done,
       note engine version.
