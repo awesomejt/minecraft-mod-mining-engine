@@ -147,7 +147,7 @@ Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 Follow `../trees/MIGRATION.md` §3–§5.
 
 - [x] 5.1 Bump `engine_version=0.2.0`.
-- [ ] 5.2 `TreeScanner` → thin adapter over `ConnectedBlockScanner` /
+- [x] 5.2 `TreeScanner` → thin adapter over `ConnectedBlockScanner` /
       `AdjacentBlockCollector` (keeps `isLogLike`/`isLeafLike` matchers,
       BlockPos↔Pos3i conversion, `ScannedTree` + classification). Existing
       trees tests must keep passing unchanged.
