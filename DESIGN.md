@@ -57,7 +57,7 @@ Base package `media.jlt.minecraft.engine`:
 | `engine.scan` | `Pos3i`, `BlockMatcher`, `ScanLimits`, `ConnectedBlockScanner`, `AdjacentBlockCollector`, `ScanDepthBounds` |
 | `engine.balance` | `BalanceSettings`, `DurabilityBudget`, `DurabilitySubstitutionPlan`, `ExperienceMath`, `HarvestPlanner` |
 | `engine.schedule` | `HarvestScheduler`, `ScheduledBreak`, `ScheduleTiming`, `HungerPauseTracker`, `InstantBreakBatch`, `HarvestFeedback` |
-| `engine.port` | `HarvestAdapter`, `ActivePlayer`, `ToolSnapshot`, `BreakResult` |
+| `engine.port` | `HarvestAdapter`, `ActivePlayer`, `ToolSnapshot` |
 | `engine.config` | `JsonConfigStore` |
 
 ## 4. Classes moved verbatim from trees (Phase 2)
