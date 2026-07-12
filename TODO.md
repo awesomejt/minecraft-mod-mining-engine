@@ -196,8 +196,9 @@ Follow `../mining-ores/DESIGN.md` throughout.
       (stone pick), deepslate-variant vein continuity, tier gate refusal
       (e.g. iron pick on diamond ore → hint), hunger pause/resume, instant
       batch with Efficiency V, `/jlt_ores reload`.
-- [ ] 6.9 **Commit mining-ores** ("Initial jlt_ores mod on mining-engine 0.2.0").
-      ✅ **Checkpoint D: ores 0.1.0.**
+- [x] 6.9 **Commit mining-ores** one task per commit, per the execution request
+      (scaffold through translations: `868e669`..`1d3c894`).
+      ✅ **Checkpoint D after 6.8: ores 0.1.0.**
 
 ## Phase 7 — Wrap-up
 
@@ -207,9 +208,9 @@ Follow `../mining-ores/DESIGN.md` throughout.
   - [x] Tracked `README.md`: mark migration done and note engine version.
   - [ ] **[Jason]** Decide whether the pre-existing untracked `MIGRATION.md`
         should be adopted and updated or remain an untracked planning artifact.
-- [ ] 7.3 Optional stretch (skip unless Jason asks): gametests for ores copied
-      from `../reseed` wiring; large-vein tier bump (ores DESIGN §7);
-      GitHub Actions `./gradlew test` in each repo.
+- [x] 7.3 Optional stretch skipped as instructed (unless Jason asks):
+      gametests for ores copied from `../reseed` wiring; large-vein tier bump
+      (ores DESIGN §7); GitHub Actions `./gradlew test` in each repo.
 
 ---
 
@@ -234,3 +235,5 @@ ores DESIGN.md, with one line of why.
   and complemented block registry ids for exact-block matches; a single
   constant `matchKind` could not preserve both configured matching modes after
   the trigger block was broken.
+- Mining-ores was committed once per completed task instead of as one combined
+  Phase 6 commit, following the user's explicit one-commit-per-iteration rule.
