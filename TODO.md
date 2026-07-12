@@ -203,8 +203,10 @@ Follow `../mining-ores/DESIGN.md` throughout.
 
 - [x] 7.1 Engine `README.md`: what it is, the ports a consumer implements,
       version policy (semver, MC-independent), publishToMavenLocal workflow.
-- [ ] 7.2 Trees `README` (if present) + `MIGRATION.md`: mark migration done,
-      note engine version.
+- [ ] 7.2 Trees migration documentation:
+  - [x] Tracked `README.md`: mark migration done and note engine version.
+  - [ ] **[Jason]** Decide whether the pre-existing untracked `MIGRATION.md`
+        should be adopted and updated or remain an untracked planning artifact.
 - [ ] 7.3 Optional stretch (skip unless Jason asks): gametests for ores copied
       from `../reseed` wiring; large-vein tier bump (ores DESIGN §7);
       GitHub Actions `./gradlew test` in each repo.
