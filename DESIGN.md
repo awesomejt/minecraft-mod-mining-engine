@@ -334,6 +334,23 @@ Gson round-trip, write-default-file-if-missing, `load`/`reload` returning a
 (they pass `FabricLoader.getInstance().getConfigDir()`). No logger; return
 enough info for the mod to log.
 
+```java
+new JsonConfigStore<T>(
+    Path configDirectory,
+    String fileName,
+    Class<T> configType,
+    Supplier<T> defaults,
+    UnaryOperator<T> sanitizer
+);
+
+ReloadResult<T> load();   // startup name; same read/sanitize/rewrite contract
+ReloadResult<T> reload();
+```
+
+The mod-owned sanitizer may capture its logger for validation warnings. The
+store itself has no logging or platform dependency and never overwrites a
+malformed existing file.
+
 ## 10. Testing
 
 - Moved classes keep their moved tests (same assertions, new packages).
