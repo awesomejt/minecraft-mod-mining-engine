@@ -159,7 +159,7 @@ Follow `../trees/MIGRATION.md` §3–§5.
       `HarvestFeedback` → translation keys per MIGRATION.md §5. Keep
       entry-gate logic (sneak/axe/natural/tier checks) and both-phase
       (stem/leaf) orchestration mod-side.
-- [ ] 5.5 Delete the now-dead private methods from `TreesMod` (everything the
+- [x] 5.5 Delete the now-dead private methods from `TreesMod` (everything the
       scheduler/planner absorbed). Target: file well under half its current
       830 lines.
 - [ ] 5.6 `./gradlew test build` green.
