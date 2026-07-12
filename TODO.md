@@ -138,8 +138,8 @@ Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 - [x] 4.7 `JsonConfigStore` extracted from trees `ModConfig` (Path-based, no
       FabricLoader, no Logger) + tests (missing file → defaults written,
       malformed JSON → error result, sanitize hook runs).
-- [ ] 4.8 Bump engine to `0.2.0`, `./gradlew test publishToMavenLocal`.
-- [ ] 4.9 **Commit engine.** ✅ **Checkpoint B: engine 0.2.0, orchestrator fully
+- [x] 4.8 Bump engine to `0.2.0`, `./gradlew test publishToMavenLocal`.
+- [x] 4.9 **Commit engine.** ✅ **Checkpoint B: engine 0.2.0, orchestrator fully
       unit-tested without Minecraft.**
 
 ## Phase 5 — Rewire trees onto the orchestrator
