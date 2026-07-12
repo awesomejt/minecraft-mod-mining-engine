@@ -124,7 +124,7 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
 
 Transplant from `TreesMod` per DESIGN.md §6–§9. Suggested order:
 
-- [ ] 4.1 `BalanceSettings` (+ `TaxMode`, `DurabilityProtectionMode`,
+- [x] 4.1 `BalanceSettings` (+ `TaxMode`, `DurabilityProtectionMode`,
       `delayTicksForEfficiencyLevel`, `isProtectionActive`).
 - [ ] 4.2 `HarvestPlanner` + tests (§6 semantics; §10 test list).
 - [ ] 4.3 Ports: `HarvestAdapter`, `ActivePlayer`, `ToolSnapshot`, `BreakResult`
@@ -214,6 +214,8 @@ Follow `../mining-ores/DESIGN.md` throughout.
 ## Deviation log
 
 Record every place the implementation deviates from DESIGN.md / MIGRATION.md /
-ores DESIGN.md, with one line of why. Empty so far.
+ores DESIGN.md, with one line of why.
 
-- (none)
+- `DurabilityProtectionMode.ENCHANTED_ONLY` uses config name `enchanted_only`,
+  matching trees commit `4f18707` and its existing JSON contract; DESIGN §8
+  previously abbreviated this as `enchanted` and was corrected.

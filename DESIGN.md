@@ -300,7 +300,7 @@ flat JSON configs (trees' JSON stays byte-compatible — see `../trees/MIGRATION
 
 ```java
 enum TaxMode { HUNGER_ONLY, XP_ONLY, XP_AFTER_HUNGER_DEPLETED }        // "hunger_only" etc.
-enum DurabilityProtectionMode { OFF, ENCHANTED_ONLY, ALL }             // "off"/"enchanted"/"all"
+enum DurabilityProtectionMode { OFF, ENCHANTED_ONLY, ALL }             // "off"/"enchanted_only"/"all"
 
 TaxMode taxMode; boolean enableHungerTax; int hungerTaxFloor; int xpTaxFloor;
 int hungerResumeTimeoutTicks;
