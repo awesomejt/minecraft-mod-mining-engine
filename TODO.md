@@ -179,7 +179,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
       (`archivesName = 'mod-mining-ores'`, engine dep + `include`),
       `gradle.properties` (`mod_version=0.1.0`, `engine_version=0.2.0`, same
       MC/loader/api versions), fabric-specific `.gitignore` entries, LICENSE.
-- [ ] 6.2 `fabric.mod.json`: id `jlt_ores`, entrypoint
+- [x] 6.2 `fabric.mod.json`: id `jlt_ores`, entrypoint
       `media.jlt.minecraft.mods.ores.OresMod`, same depends block as trees.
 - [ ] 6.3 `OreFamily` enum + matcher (DESIGN §3; specific-blocks-before-tags
       ordering — see the nether-gold note) + tests.
