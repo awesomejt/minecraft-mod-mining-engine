@@ -186,7 +186,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
 - [x] 6.4 `ModConfig` (flat, per DESIGN §5, delegating to `JsonConfigStore`,
       `toBalanceSettings()`) + sanitization tests; `config/jlt_ores.example.json`
       with `_docs`, mirroring trees' example file style.
-- [ ] 6.5 `OresMod` entrypoint per DESIGN §4 (event → gates → vein scan →
+- [x] 6.5 `OresMod` entrypoint per DESIGN §4 (event → gates → vein scan →
       tier gate → planner → schedule; ports implementation mirrors trees —
       pickaxe instead of axe, single phase, no leaf pass, no natural-tree
       check).
@@ -225,3 +225,10 @@ ores DESIGN.md, with one line of why.
   lapis, diamond, or emerald ores even though their vanilla data tags still
   exist; `jlt_ores` creates equivalent `TagKey`s from the canonical
   `minecraft:<family>_ores` identifiers.
+- Minecraft 26.2 has data-driven tools and no `PickaxeItem` class; ores uses
+  `ItemTags.PICKAXES` for both the initial and scheduled-tool gates, preserving
+  compatibility with vanilla and modded pickaxes.
+- Ores uses nonnegative `OreFamily` ordinals for family-wide scheduled matches
+  and complemented block registry ids for exact-block matches; a single
+  constant `matchKind` could not preserve both configured matching modes after
+  the trigger block was broken.
