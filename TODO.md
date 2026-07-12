@@ -191,7 +191,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
       pickaxe instead of axe, single phase, no leaf pass, no natural-tree
       check).
 - [x] 6.6 `assets/jlt_ores/lang/en_us.json` per DESIGN §6.
-- [ ] 6.7 `./gradlew test build` green; nested engine jar present.
+- [x] 6.7 `./gradlew test build` green; nested engine jar present.
 - [ ] 6.8 **[Jason]** In-game smoke test: sneak-mine a coal vein
       (stone pick), deepslate-variant vein continuity, tier gate refusal
       (e.g. iron pick on diamond ore → hint), hunger pause/resume, instant
