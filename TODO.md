@@ -43,9 +43,9 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
 
 ## Phase 1 — Engine skeleton
 
-- [ ] 1.1 Copy `gradlew`, `gradlew.bat`, `gradle/wrapper/` from `../trees` into this repo.
-- [ ] 1.2 `settings.gradle`: `rootProject.name = 'mining-engine'` (no pluginManagement block needed — no Loom).
-- [ ] 1.3 `build.gradle`:
+- [x] 1.1 Copy `gradlew`, `gradlew.bat`, `gradle/wrapper/` from `../trees` into this repo.
+- [x] 1.2 `settings.gradle`: `rootProject.name = 'mining-engine'` (no pluginManagement block needed — no Loom).
+- [x] 1.3 `build.gradle`:
   ```gradle
   plugins {
       id 'java-library'
@@ -78,9 +78,9 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
       publications { create('mavenJava', MavenPublication) { from components.java } }
   }
   ```
-- [ ] 1.4 Copy `LICENSE` from trees.
-- [ ] 1.5 `./gradlew build` passes (empty src is fine).
-- [ ] 1.6 **Commit** ("Scaffold plain-Java library build").
+- [x] 1.4 Copy `LICENSE` from trees.
+- [x] 1.5 `./gradlew build` passes (empty src is fine).
+- [x] 1.6 **Commit** ("Scaffold plain-Java library build").
 
 ## Phase 2 — Move pure logic into the engine
 
