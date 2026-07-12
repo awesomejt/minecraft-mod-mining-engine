@@ -190,7 +190,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
       tier gate → planner → schedule; ports implementation mirrors trees —
       pickaxe instead of axe, single phase, no leaf pass, no natural-tree
       check).
-- [ ] 6.6 `assets/jlt_ores/lang/en_us.json` per DESIGN §6.
+- [x] 6.6 `assets/jlt_ores/lang/en_us.json` per DESIGN §6.
 - [ ] 6.7 `./gradlew test build` green; nested engine jar present.
 - [ ] 6.8 **[Jason]** In-game smoke test: sneak-mine a coal vein
       (stone pick), deepslate-variant vein continuity, tier gate refusal
