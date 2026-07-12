@@ -183,7 +183,7 @@ Follow `../mining-ores/DESIGN.md` throughout.
       `media.jlt.minecraft.mods.ores.OresMod`, same depends block as trees.
 - [x] 6.3 `OreFamily` enum + matcher (DESIGN §3; specific-blocks-before-tags
       ordering — see the nether-gold note) + tests.
-- [ ] 6.4 `ModConfig` (flat, per DESIGN §5, delegating to `JsonConfigStore`,
+- [x] 6.4 `ModConfig` (flat, per DESIGN §5, delegating to `JsonConfigStore`,
       `toBalanceSettings()`) + sanitization tests; `config/jlt_ores.example.json`
       with `_docs`, mirroring trees' example file style.
 - [ ] 6.5 `OresMod` entrypoint per DESIGN §4 (event → gates → vein scan →
