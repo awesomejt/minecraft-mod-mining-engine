@@ -112,13 +112,13 @@ toolchain from the trees repo unchanged (Gradle wrapper 9.5.1, Loom
 
 ## Phase 3 — Generic scanner in the engine
 
-- [ ] 3.1 Implement `Pos3i`, `BlockMatcher`, `ScanLimits`,
+- [x] 3.1 Implement `Pos3i`, `BlockMatcher`, `ScanLimits`,
       `ConnectedBlockScanner`, `AdjacentBlockCollector` per DESIGN.md §5,
       transplanting BFS/collection logic from trees `TreeScanner` at `4f18707`.
-- [ ] 3.2 Engine tests: count cap, horizontal radius, optional depth bound
+- [x] 3.2 Engine tests: count cap, horizontal radius, optional depth bound
       (empty = unbounded below), origin+26-neighbor seeding, top-down sort,
       collector cap/exclusion.
-- [ ] 3.3 **Commit engine.**
+- [x] 3.3 **Commit engine.**
 
 ## Phase 4 — Balance orchestrator in the engine
 
